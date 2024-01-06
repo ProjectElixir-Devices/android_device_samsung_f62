@@ -11,9 +11,6 @@ function blob_fixup() {
         vendor/firmware/nvram.txt*)
             sed -i 's/disable_11ax=1/disable_11ax=0/g' "${2}"
             ;;
-        vendor/lib*/libsec-ril*.so)
-            "${PATCHELF}" --replace-needed libril.so libril-samsung.so "${2}"
-            ;;
         vendor/lib/hw/audio.primary.exynos9825.so)
             "${PATCHELF}" --remove-needed libaudio_soundtrigger.so "${2}"
             "${PATCHELF}" --add-needed libshim_audioparams.so "${2}"
