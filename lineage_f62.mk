@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2023 The cherishOS Project
+# Copyright (C) 2021-2023 The lineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,20 +27,19 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Cherish
-CHERISH_MAINTAINER := FrEeRuNnEr4EvEr
-CHERISH_CHIPSET := exynos9825
-CHERISH_BATTERY := 7000mAh
-CHERISH_DISPLAY := 1080x2400
+# MATRIXX
+MATRIXX_CHIPSET := exynos9825
+MATRIXX_BATTERY := 7000mAh
+MATRIXX_DISPLAY := 1080x2400
 
-## Inherit some common cherish stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+## Inherit some common lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := cherish_f62
+PRODUCT_NAME := lineage_f62
 PRODUCT_DEVICE := f62
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-E625F
