@@ -36,9 +36,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init/init.m62.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.m62.rc
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-elixir
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
     SettingsProviderOverlayM62
+
+# Remove unwanted packages
+ PRODUCT_PACKAGES += \
+     RmPkgs

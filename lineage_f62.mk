@@ -28,25 +28,25 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Project-Elixir
-IS_PHONE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_APERTURE_CAMERA := true
-FORCE_LAWNCHAIR := true
+
 ELIXIR_BUILD_TYPE := OFFICIAL
 BUILD_USERNAME := FrEeRuNnEr4EvEr
 BUILD_HOSTNAME := Elixir
+WITH_GMS := true
+
 TARGET_INCLUDE_STOCK_ACORE := false
 EXTRA_UDFPS_ANIMATIONS := true
+
 TARGET_BOOT_ANIMATION_RES := 1440
 
 ## Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_f62
+PRODUCT_NAME := lineage_f62
 PRODUCT_DEVICE := f62
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-E625F

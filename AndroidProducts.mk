@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2023 The aospOS Project
+# Copyright (C) 2021-2023 The lineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_f62.mk
+    $(LOCAL_DIR)/lineage_f62.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_f62-eng \
-    aosp_f62-user \
-    aosp_f62-userdebug
+    lineage_f62-eng \
+    lineage_f62-user \
+    lineage_f62-userdebug
