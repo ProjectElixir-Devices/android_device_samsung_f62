@@ -12,10 +12,9 @@ rm -rf kernel/samsung/exynos9820
 git clone --depth=1 https://github.com/ProjectMatrixx-exynos9820/android_kernel_samsung_exynos9820 -b kernelsu kernel/samsung/exynos9820
 
 # Hardware OSS parts for Samsung
-mv hardware/samsung/nfc .
 rm -rf hardware/samsung
-git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung -b lineage-22.2 hardware/samsung
-mv nfc hardware/samsung
+git clone --depth=1 https://github.com/LineageOS/android_hardware_samsung -b lineage-22.2 hardware/samsung
+git clone --depth=1 https://github.com/LineageOS/android_hardware_samsung_nfc -b lineage-22.2 hardware/samsung/nfc
 
 # SLSI Sepolicy
 rm -rf device/samsung_slsi/sepolicy
