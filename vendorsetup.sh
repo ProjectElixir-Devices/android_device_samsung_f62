@@ -23,10 +23,10 @@ git clone --depth=1 https://github.com/linux4-bringup-priv/android_device_samsun
 # Linaro BSP
 rm -rf hardware/samsung_slsi-linaro
 git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_config -b lineage-22.2 hardware/samsung_slsi-linaro/config
-git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_exynos -b lineage-22.2 hardware/samsung_slsi-linaro/exynos
+git clone --depth=1 https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_exynos -b lineage-22.2 hardware/samsung_slsi-linaro/exynos
 git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_exynos5 -b lineage-22.2 hardware/samsung_slsi-linaro/exynos5
 git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_graphics -b lineage-22.2 hardware/samsung_slsi-linaro/graphics
 git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_interfaces -b lineage-22.2 hardware/samsung_slsi-linaro/interfaces
 git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_openmax -b lineage-22.2 hardware/samsung_slsi-linaro/openmax
-git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_camera -b lineage-22.2 hardware/samsung_slsi-linaro/camera
-git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_codec2 -b lineage-22.2 hardware/samsung_slsi-linaro/codec2
+#git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_camera -b lineage-22.2 hardware/samsung_slsi-linaro/camera
+#git clone --depth=1 https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_codec2 -b lineage-22.2 hardware/samsung_slsi-linaro/codec2
